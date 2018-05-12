@@ -26,14 +26,6 @@
 		E38A79CB207915C300998049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38A79C9207915C300998049 /* LaunchScreen.storyboard */; };
 		E38A79D720791C1700998049 /* TopicTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A79D620791C1700998049 /* TopicTVC.swift */; };
 		E38A79D920791F0400998049 /* ObjectsStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A79D820791F0400998049 /* ObjectsStructure.swift */; };
-		E3C28D66207FC3E9008ACEAE /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D5F207FC3E7008ACEAE /* GraphingViewController.swift */; };
-		E3C28D67207FC3E9008ACEAE /* GraphingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D60207FC3E8008ACEAE /* GraphingView.swift */; };
-		E3C28D68207FC3E9008ACEAE /* AxesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D61207FC3E8008ACEAE /* AxesDrawer.swift */; };
-		E3C28D69207FC3E9008ACEAE /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D62207FC3E8008ACEAE /* CalculatorViewController.swift */; };
-		E3C28D6A207FC3E9008ACEAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D63207FC3E8008ACEAE /* Constants.swift */; };
-		E3C28D6B207FC3E9008ACEAE /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D64207FC3E9008ACEAE /* CalculatorBrain.swift */; };
-		E3C28D6C207FC3E9008ACEAE /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C28D65207FC3E9008ACEAE /* Keys.swift */; };
-		E3D7EB17208B96EC004B9FEB /* GraphSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7EB16208B96EC004B9FEB /* GraphSecond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,14 +52,6 @@
 		E38A79CC207915C300998049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38A79D620791C1700998049 /* TopicTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTVC.swift; sourceTree = "<group>"; };
 		E38A79D820791F0400998049 /* ObjectsStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsStructure.swift; sourceTree = "<group>"; };
-		E3C28D5F207FC3E7008ACEAE /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
-		E3C28D60207FC3E8008ACEAE /* GraphingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingView.swift; sourceTree = "<group>"; };
-		E3C28D61207FC3E8008ACEAE /* AxesDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxesDrawer.swift; sourceTree = "<group>"; };
-		E3C28D62207FC3E8008ACEAE /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		E3C28D63207FC3E8008ACEAE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E3C28D64207FC3E9008ACEAE /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
-		E3C28D65207FC3E9008ACEAE /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		E3D7EB16208B96EC004B9FEB /* GraphSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSecond.swift; sourceTree = "<group>"; };
 		E7F616943739E5CAD3BB5BA9 /* Pods-EngineeringElectromagnatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineeringElectromagnatic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EngineeringElectromagnatic/Pods-EngineeringElectromagnatic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,19 +139,11 @@
 		E38A79D42079160700998049 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E3C28D61207FC3E8008ACEAE /* AxesDrawer.swift */,
-				E3C28D64207FC3E9008ACEAE /* CalculatorBrain.swift */,
-				E3C28D62207FC3E8008ACEAE /* CalculatorViewController.swift */,
-				E3C28D63207FC3E8008ACEAE /* Constants.swift */,
-				E3C28D60207FC3E8008ACEAE /* GraphingView.swift */,
-				E3C28D5F207FC3E7008ACEAE /* GraphingViewController.swift */,
-				E3C28D65207FC3E9008ACEAE /* Keys.swift */,
 				E38A79C2207915C300998049 /* TopicVC.swift */,
 				E30A87B7207BCAEA00AE0697 /* GraphVC.swift */,
 				E356083E207E5D60001CE857 /* BasicConceptVC.swift */,
 				E3560840207E5DA4001CE857 /* QuickQuizVC.swift */,
 				E3560842207E5DC7001CE857 /* SimulationsVC.swift */,
-				E3D7EB16208B96EC004B9FEB /* GraphSecond.swift */,
 				A04EA2D6208E8C6A00680BB0 /* GifVController.swift */,
 				E3853D3020A5E72400F81D22 /* EETabBarVC.swift */,
 			);
@@ -303,27 +279,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C28D67207FC3E9008ACEAE /* GraphingView.swift in Sources */,
-				E3C28D6C207FC3E9008ACEAE /* Keys.swift in Sources */,
 				E38A79D920791F0400998049 /* ObjectsStructure.swift in Sources */,
 				E38A79D720791C1700998049 /* TopicTVC.swift in Sources */,
 				E3560845207E62BD001CE857 /* TopicCVC.swift in Sources */,
 				E30A87FD207BF80E00AE0697 /* GraphPod.m in Sources */,
-				E3C28D6A207FC3E9008ACEAE /* Constants.swift in Sources */,
-				E3C28D6B207FC3E9008ACEAE /* CalculatorBrain.swift in Sources */,
-				E3C28D66207FC3E9008ACEAE /* GraphingViewController.swift in Sources */,
 				E3853D3120A5E72400F81D22 /* EETabBarVC.swift in Sources */,
 				E3560841207E5DA4001CE857 /* QuickQuizVC.swift in Sources */,
-				E3D7EB17208B96EC004B9FEB /* GraphSecond.swift in Sources */,
 				E30A87B8207BCAEA00AE0697 /* GraphVC.swift in Sources */,
 				E38A79C3207915C300998049 /* TopicVC.swift in Sources */,
 				E38A79C1207915C300998049 /* AppDelegate.swift in Sources */,
 				E356083F207E5D60001CE857 /* BasicConceptVC.swift in Sources */,
 				E3560843207E5DC7001CE857 /* SimulationsVC.swift in Sources */,
-				E3C28D69207FC3E9008ACEAE /* CalculatorViewController.swift in Sources */,
 				A04EA2D7208E8C6B00680BB0 /* GifVController.swift in Sources */,
 				A04EA2D9208E910700680BB0 /* UIImage+Gif.swift in Sources */,
-				E3C28D68207FC3E9008ACEAE /* AxesDrawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

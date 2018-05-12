@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="-35"/>
+            <point key="canvasLocation" x="-130" y="-63"/>
         </scene>
         <!--Basic Concept-->
         <scene sceneID="rxo-ir-Aeb">
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6M-5Y-bzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="-233"/>
+            <point key="canvasLocation" x="1394" y="-393"/>
         </scene>
         <!--Simulation-->
         <scene sceneID="lVl-HS-iHx">
@@ -361,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIM-QH-vtd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="412.44377811094455"/>
+            <point key="canvasLocation" x="2070" y="-63"/>
         </scene>
         <!--Topic GIF-->
         <scene sceneID="7J4-Kt-kQG">
@@ -391,80 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5d-Ta-DSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="526"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Ien-a2-uwF">
-            <objects>
-                <viewController id="YuG-pS-Dfk" customClass="GraphSecond" customModule="EngineeringElectromagnatic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ckG-Dd-0At">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b70-tL-JQE" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="9.5" y="167" width="356" height="333.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFp-PC-v1y">
-                                <rect key="frame" x="94" y="633.5" width="187.5" height="33.5"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="ActionGraphs:" destination="YuG-pS-Dfk" eventType="touchUpInside" id="k7w-Vg-HJv"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EPy-rd-DVg">
-                                <rect key="frame" x="9.5" y="25" width="356" height="46.5"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEo-ob-7yS">
-                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="46.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="w" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPU-3R-wiu">
-                                        <rect key="frame" x="120.5" y="0.0" width="115" height="46.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="584-HT-NIJ">
-                                        <rect key="frame" x="240.5" y="0.0" width="115.5" height="46.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="EPy-rd-DVg" firstAttribute="width" secondItem="ckG-Dd-0At" secondAttribute="width" multiplier="0.95" id="Du1-AG-f97"/>
-                            <constraint firstItem="EPy-rd-DVg" firstAttribute="top" secondItem="vQd-a0-hp1" secondAttribute="top" constant="5" id="GJ9-st-hfR"/>
-                            <constraint firstItem="EPy-rd-DVg" firstAttribute="height" secondItem="ckG-Dd-0At" secondAttribute="height" multiplier="0.07" id="LOU-cm-958"/>
-                            <constraint firstItem="SFp-PC-v1y" firstAttribute="height" secondItem="ckG-Dd-0At" secondAttribute="height" multiplier="0.05" id="STd-Qg-KV6"/>
-                            <constraint firstItem="b70-tL-JQE" firstAttribute="width" secondItem="ckG-Dd-0At" secondAttribute="width" multiplier="0.95" id="Vwb-0k-8H3"/>
-                            <constraint firstItem="b70-tL-JQE" firstAttribute="height" secondItem="ckG-Dd-0At" secondAttribute="height" multiplier="0.5" id="Y5g-kt-klZ"/>
-                            <constraint firstItem="SFp-PC-v1y" firstAttribute="centerX" secondItem="ckG-Dd-0At" secondAttribute="centerX" id="cK0-Dg-dIz"/>
-                            <constraint firstItem="b70-tL-JQE" firstAttribute="centerY" secondItem="ckG-Dd-0At" secondAttribute="centerY" id="d22-lE-cjh"/>
-                            <constraint firstItem="EPy-rd-DVg" firstAttribute="centerX" secondItem="ckG-Dd-0At" secondAttribute="centerX" id="e2Q-DF-eC4"/>
-                            <constraint firstItem="vQd-a0-hp1" firstAttribute="bottom" secondItem="SFp-PC-v1y" secondAttribute="bottom" id="eNB-Mn-kGZ"/>
-                            <constraint firstItem="b70-tL-JQE" firstAttribute="centerX" secondItem="ckG-Dd-0At" secondAttribute="centerX" id="eOH-nZ-ibK"/>
-                            <constraint firstItem="SFp-PC-v1y" firstAttribute="width" secondItem="ckG-Dd-0At" secondAttribute="width" multiplier="0.5" id="nDH-Jz-ueM"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="vQd-a0-hp1"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7HU-F8-i6W"/>
-                    <connections>
-                        <outlet property="ActionGraph" destination="SFp-PC-v1y" id="f3f-ab-36J"/>
-                        <outlet property="Eo" destination="HEo-ob-7yS" id="G9A-IR-Fxu"/>
-                        <outlet property="GraphView" destination="b70-tL-JQE" id="QkE-2X-T0y"/>
-                        <outlet property="t" destination="584-HT-NIJ" id="iF6-tT-lOH"/>
-                        <outlet property="w" destination="KPU-3R-wiu" id="UuH-6u-34D"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xpQ-dF-beB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3092" y="614"/>
+            <point key="canvasLocation" x="1321" y="699"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vg0-IY-WTz">
@@ -544,7 +471,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7l-dZ-ZgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633" y="-112"/>
+            <point key="canvasLocation" x="607" y="-63"/>
         </scene>
         <!--Quick Quiz-->
         <scene sceneID="vco-JE-QQF">
@@ -629,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mrf-BC-dCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="614"/>
+            <point key="canvasLocation" x="606" y="700"/>
         </scene>
     </scenes>
     <resources>
