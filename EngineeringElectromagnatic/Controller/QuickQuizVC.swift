@@ -29,6 +29,17 @@ class QuickQuizVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
 
     var count = 0
 
+    @IBAction func PreviousButton(_ sender: Any) {
+        
+        
+        if (CountOfArray < quizArray3.count - 1 && CountOfArray > 0){
+            CountOfArray = CountOfArray - 1
+            self.tableView.reloadData()
+        }
+       
+
+    }
+        
     @IBAction func next(_ sender: Any) {
         if CorrectAnswer != selectedAnswer{
             let alert = UIAlertController(title: "Alert", message: "Wrong Answer", preferredStyle: UIAlertControllerStyle.alert)
@@ -37,14 +48,15 @@ class QuickQuizVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
         }
         else if CountOfArray < quizArray3.count-1{
-//            let alert1 = UIAlertController(title: "Alert", message: "Correct Awnser", preferredStyle: UIAlertControllerStyle.alert)
-//            alert1.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler:{ action in
-//                self.Next()
-//            }))
-//            self.present(alert1, animated: true, completion: nil)
+            let alert1 = UIAlertController(title: "Alert", message: "Correct Awnser", preferredStyle: UIAlertControllerStyle.alert)
+            alert1.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert1, animated: true, completion: nil)
+            
             CountOfArray = CountOfArray + 1
             tableView.reloadData()
+            
             NextButton.isEnabled = false
+            
         }else{
             CountOfArray = 0
             tableView.reloadData()

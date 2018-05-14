@@ -363,7 +363,7 @@
             </objects>
             <point key="canvasLocation" x="2070" y="-63"/>
         </scene>
-        <!--Topic GIF-->
+        <!--Animation -->
         <scene sceneID="7J4-Kt-kQG">
             <objects>
                 <viewController id="5Hw-wB-QjV" customClass="GifVController" customModule="EngineeringElectromagnatic" customModuleProvider="target" sceneMemberID="viewController">
@@ -384,7 +384,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g5x-rJ-iAe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Topic GIF" image="ic_insert_chart" id="Oic-WJ-qpj"/>
+                    <tabBarItem key="tabBarItem" title="Animation " image="ic_insert_chart" id="Oic-WJ-qpj"/>
                     <connections>
                         <outlet property="ImageView" destination="ewg-41-Vvn" id="f2j-yO-mdb"/>
                     </connections>
@@ -518,17 +518,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-mG-NFq">
-                                <rect key="frame" x="56.5" y="472" width="262.5" height="39"/>
-                                <color key="backgroundColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Next Question">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="bKb-jT-nYm" eventType="touchUpInside" id="rl8-Ll-bHa"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="NML-Dh-HOv">
+                                <rect key="frame" x="19" y="472" width="337.5" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2r-mG-NFq">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
+                                        <color key="backgroundColor" red="0.25098039215686274" green="0.8784313725490196" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Previous Question">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PreviousButton:" destination="bKb-jT-nYm" eventType="touchUpInside" id="PCb-FG-brk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW8-zx-Qwn">
+                                        <rect key="frame" x="182" y="0.0" width="155.5" height="30"/>
+                                        <color key="backgroundColor" red="0.25098039220000001" green="0.87843137250000003" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Next Question">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="next:" destination="bKb-jT-nYm" eventType="touchUpInside" id="nuT-cf-B6k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -537,19 +553,18 @@
                             <constraint firstItem="EPt-Qx-EdA" firstAttribute="height" secondItem="TXq-G0-z94" secondAttribute="height" multiplier="0.2" id="6d1-gy-NNa"/>
                             <constraint firstItem="pOJ-8O-MH2" firstAttribute="top" secondItem="EPt-Qx-EdA" secondAttribute="bottom" id="9HN-wv-SZU"/>
                             <constraint firstItem="pOJ-8O-MH2" firstAttribute="width" secondItem="TXq-G0-z94" secondAttribute="width" multiplier="0.9" id="C71-cQ-mqH"/>
-                            <constraint firstItem="G2r-mG-NFq" firstAttribute="top" secondItem="pOJ-8O-MH2" secondAttribute="bottom" constant="20" id="Phs-W1-kGx"/>
-                            <constraint firstItem="G2r-mG-NFq" firstAttribute="height" secondItem="TXq-G0-z94" secondAttribute="height" multiplier="0.07" id="Thi-9d-zU6"/>
+                            <constraint firstItem="NML-Dh-HOv" firstAttribute="centerX" secondItem="Dsx-Nb-dG0" secondAttribute="centerX" id="MON-6o-6HU"/>
+                            <constraint firstItem="NML-Dh-HOv" firstAttribute="width" secondItem="pOJ-8O-MH2" secondAttribute="width" id="Mpi-Rz-P4A"/>
                             <constraint firstItem="pOJ-8O-MH2" firstAttribute="height" secondItem="TXq-G0-z94" secondAttribute="height" multiplier="0.5" id="ULR-gl-mPI"/>
                             <constraint firstItem="EPt-Qx-EdA" firstAttribute="top" secondItem="TXq-G0-z94" secondAttribute="top" id="Xqe-0O-MNa"/>
-                            <constraint firstItem="G2r-mG-NFq" firstAttribute="centerX" secondItem="Dsx-Nb-dG0" secondAttribute="centerX" id="Y8e-s4-dAF"/>
-                            <constraint firstItem="G2r-mG-NFq" firstAttribute="width" secondItem="TXq-G0-z94" secondAttribute="width" multiplier="0.7" id="Zte-sE-Kue"/>
+                            <constraint firstItem="NML-Dh-HOv" firstAttribute="top" secondItem="pOJ-8O-MH2" secondAttribute="bottom" constant="20" id="YsV-O6-xhn"/>
                             <constraint firstItem="EPt-Qx-EdA" firstAttribute="width" secondItem="TXq-G0-z94" secondAttribute="width" multiplier="0.9" id="epf-F8-rym"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TXq-G0-z94"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Quick Quiz" image="ic_local_library" id="qiV-Ig-HbW"/>
                     <connections>
-                        <outlet property="NextButton" destination="G2r-mG-NFq" id="l0x-Xe-lf3"/>
+                        <outlet property="NextButton" destination="wW8-zx-Qwn" id="QfZ-p1-q77"/>
                         <outlet property="QuizLbl" destination="EPt-Qx-EdA" id="zHm-12-Hbh"/>
                         <outlet property="tableView" destination="pOJ-8O-MH2" id="h6G-1S-xRA"/>
                     </connections>
